@@ -47,8 +47,9 @@ public class PlayerController : MonoBehaviour
                 break;
 
             case GameManager.GameState.Dead:
-                if (!_deadPlaying)
+                if (!_deadPlaying){
                     StartCoroutine("PlayDeadAnimation");
+				}
                 break;
         }
 
@@ -63,17 +64,20 @@ public class PlayerController : MonoBehaviour
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
 
-        if (GameManager.lives <= 0)
-        {
-            Debug.Log("Treshold for High Score: " + SM.LowestHigh());
-            if (GameManager.score >= SM.LowestHigh())
-                GUINav.getScoresMenu();
-            else
-                GUINav.H_ShowGameOverScreen();
-        }
+        //if (GameManager.lives <= 0)
+        //{
+          //  Debug.Log("Treshold for High Score: " + SM.LowestHigh());
+           // if (GameManager.score >= SM.LowestHigh())
+            //    GUINav.getScoresMenu();
+           // else
+        //        GUINav.H_ShowGameOverScreen();
+        //}
 
-        else
-            GM.ResetScene();
+       // else
+        GM.ResetScene();
+		GM.ResetVariables ();
+		Application.LoadLevel("game");
+
     }
 
     void Animate()

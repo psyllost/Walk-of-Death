@@ -295,18 +295,7 @@ public class GhostMove : MonoBehaviour {
 	{
 		if(other.name == "pacman")
 		{
-			//Destroy(other.gameObject);
-		    if (state == State.Run)
-		    {
-		        Calm();
-		        InitializeGhost(_startPos);
-                pacman.UpdateScore();
-		    }
-		       
-		    else
-		    {
-		        _gm.LoseLife();
-		    }
+			 _gm.LoseLife();
 
 		}
 	}
@@ -383,6 +372,7 @@ public class GhostMove : MonoBehaviour {
 
 	void RunAway()
 	{
+		//speed = 0.3f;
 		GetComponent<Animator>().SetBool("Run", true);
 
         if(Time.time >= _timeToWhite && Time.time >= _timeToToggleWhite)   ToggleBlueWhite();
@@ -421,15 +411,17 @@ public class GhostMove : MonoBehaviour {
 	{
 		state = State.Run;
 		_direction *= -1;
+		speed = 0.05f;
 
         _timeToWhite = Time.time + _gm.scareLength * 0.66f;
         _timeToToggleWhite = _timeToWhite;
-        GetComponent<Animator>().SetBool("Run_White", false);
+        //GetComponent<Animator>().SetBool("Run_White", false);
 
 	}
 
 	public void Calm()
 	{
+		speed = 0.15f;
         // if the ghost is not running, do nothing
 	    if (state != State.Run) return;
 

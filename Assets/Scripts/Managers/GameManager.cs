@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
 	private GameObject zombieStatic2;
 	private GameObject zombieStatic3;
 	private GameObject zombieStatic4;
-
+	private GameObject pacDot;
     private GameGUINavigation gui;
 
 	public static bool scared;
@@ -89,11 +89,13 @@ public class GameManager : MonoBehaviour {
         pacman.GetComponent<PlayerController>().speed += Level*SpeedPerLevel/2;
     }
 
-    private void ResetVariables()
+    public void ResetVariables()
     {
         _timeToCalm = 0.0f;
         scared = false;
         PlayerController.killstreak = 0;
+		GameObject[] pacdots = GameObject.FindGameObjectsWithTag("pacdot");
+
     }
 
     // Update is called once per frame
@@ -119,7 +121,6 @@ public class GameManager : MonoBehaviour {
 		pinky.GetComponent<GhostMove>().InitializeGhost();
 		inky.GetComponent<GhostMove>().InitializeGhost();
 		clyde.GetComponent<GhostMove>().InitializeGhost();
-
         gameState = GameState.Init;  
         gui.H_ShowReadyScreen();
 
@@ -179,7 +180,7 @@ public class GameManager : MonoBehaviour {
 	{
 		//lives--;
 		gameState = GameState.Dead;
-		
+		//ResetScene ();
 		// update UI too
 		//UIScript ui = GameObject.FindObjectOfType<UIScript>();
 		//Destroy(ui.lives[ui.lives.Count - 1]);
