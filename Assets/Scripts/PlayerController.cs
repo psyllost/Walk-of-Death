@@ -4,10 +4,16 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-
+	public Rigidbody2D bullet;                // Prefab of the arrow.
+	public float movementSpeed = 20f;            // The speed of the projectile
+	public Vector3 Rotation;    
+	public float clockwise = 1000.0f;
+	public float counterClockwise = -5.0f;
+	private bool IsShooting=false;
+	
     public float speed = 0.4f;
     Vector2 _dest = Vector2.zero;
-    Vector2 _dir = Vector2.zero;
+    public Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
 
     [Serializable]
@@ -27,7 +33,9 @@ public class PlayerController : MonoBehaviour
 
     private bool _deadPlaying = false;
 
-    // Use this for initialization
+
+	
+	// Use this for initialization
     void Start()
     {
         GM = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -36,8 +44,35 @@ public class PlayerController : MonoBehaviour
         _dest = transform.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+	void Update() {
+		if (IsShooting==true) {
+			if (Input.GetButtonDown ("Fire1")) {
+//			 Instantiate an arrow!
+				Rigidbody2D bulletInstance = Instantiate (bullet, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+				if (_dir == Vector2.up) {
+					bulletInstance.velocity = transform.up * movementSpeed;
+				} else if (_dir == -Vector2.up) {
+					bulletInstance.velocity = -transform.up * movementSpeed;
+				} else if (_dir == -Vector2.right) {
+					bulletInstance.velocity = -transform.right * movementSpeed;
+				} else if (_dir == Vector2.right) {
+					bulletInstance.velocity = transform.right * movementSpeed;
+				}
+			}
+			StartCoroutine(KeepShooting());
+		}
+
+	}
+
+	IEnumerator KeepShooting()
+	{
+		yield return new WaitForSeconds(3);
+		IsShooting = false;
+		
+		//pc.GetComponent<PlayerController> ().setIsShooting(false);
+	}
+	// Update is called once per frame
+	void FixedUpdate()
     {
         switch (GameManager.gameState)
         {
@@ -87,7 +122,7 @@ public class PlayerController : MonoBehaviour
         GetComponent<Animator>().SetFloat("DirY", dir.y);
     }
 
-    bool Valid(Vector2 direction)
+    public bool Valid(Vector2 direction)
     {
         // cast line from 'next to pacman' to pacman
         // not from directly the center of next tile but just a little further from center of next tile
@@ -150,4 +185,8 @@ public class PlayerController : MonoBehaviour
         GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
 
     }
+
+	public void setIsShooting(bool isShooting) {
+		this.IsShooting = true;
+	}
 }

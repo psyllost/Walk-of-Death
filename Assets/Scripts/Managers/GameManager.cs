@@ -21,8 +21,10 @@ public class GameManager : MonoBehaviour {
 	private GameObject zombieStatic2;
 	private GameObject zombieStatic3;
 	private GameObject zombieStatic4;
+	private GameObject bullet;
 	private GameObject pacDot;
     private GameGUINavigation gui;
+	private Time startTime;
 
 	public static bool scared;
     static public int score;
@@ -70,7 +72,8 @@ public class GameManager : MonoBehaviour {
     }
 
 	void Start () 
-	{
+	{	
+		score = 0;
 		gameState = GameState.Init;
 	}
 
@@ -101,6 +104,7 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
 	void Update () 
 	{
+		score ++;
 		if(scared && _timeToCalm <= Time.time)
 			CalmGhosts();
 
@@ -123,6 +127,8 @@ public class GameManager : MonoBehaviour {
 		clyde.GetComponent<GhostMove>().InitializeGhost();
         gameState = GameState.Init;  
         gui.H_ShowReadyScreen();
+
+		score = 0;
 
 	}
 

@@ -11,6 +11,7 @@ public class ZombieStaticMove : MonoBehaviour {
 	private GameManager _gm;
 	private float _timeToWhite;
 	private float _timeToToggleWhite;
+	public Rigidbody2D bullet;
 
 	void Start()
 	{
@@ -47,19 +48,12 @@ public class ZombieStaticMove : MonoBehaviour {
 		GetComponent<Animator>().SetBool("Run", false);
 	}
 	void OnTriggerEnter2D(Collider2D co) {
-		if (co.name == "pacman")
-			//Destroy(co.gameObject);
-			if (state == State.Run)
-		{
-			//Calm();
-			//InitializeGhost(_startPos);
-			pacman.UpdateScore();
-		}
-		
-		else
-		{
+		if (co.name == "pacman"){
 			_gm.LoseLife();
 		}
-
+		else if(co.CompareTag("bullet")){
+			Destroy(gameObject);
+			//InitializeGhost(_startPos);
+		}
 	}
 }

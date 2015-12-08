@@ -293,10 +293,13 @@ public class GhostMove : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.name == "pacman")
-		{
-			 _gm.LoseLife();
 
+		if (other.name == "pacman") {
+			_gm.LoseLife();
+		}else if(other.CompareTag("bullet")){
+			Calm ();
+			InitializeGhost(_startPos);
+			Debug.Log ("BULLET HERE");
 		}
 	}
 
