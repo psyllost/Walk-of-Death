@@ -707,6 +707,7 @@ GameObject:
   - 61: {fileID: 277542277}
   - 61: {fileID: 277542276}
   - 61: {fileID: 277542275}
+  - 61: {fileID: 277542279}
   m_Layer: 0
   m_Name: maze
   m_TagString: Untagged
@@ -1182,16 +1183,16 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 14.5199537, y: 31.2300377}
+  m_Offset: {x: 4.51994991, y: 31.2300377}
   serializedVersion: 2
-  m_Size: {x: 28.1232166, y: .62323761}
+  m_Size: {x: 8.12322044, y: .62323761}
 --- !u!61 &277542260
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 277542224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
@@ -1432,6 +1433,19 @@ BoxCollider2D:
   m_Offset: {x: 14.5032568, y: 15.254014}
   serializedVersion: 2
   m_Size: {x: 7.20521736, y: .612718582}
+--- !u!61 &277542279
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 277542224}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 24.5199509, y: 31.2300377}
+  serializedVersion: 2
+  m_Size: {x: 8.12322044, y: .62323761}
 --- !u!1 &293707741
 GameObject:
   m_ObjectHideFlags: 0
