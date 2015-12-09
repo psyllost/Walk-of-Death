@@ -37,6 +37,7 @@ public class ZombieStaticMove : MonoBehaviour {
 	//TODO
 	public void Calm()
 	{
+		speed = 0.15f;
 		// if the ghost is not running, do nothing
 		if (state != State.Run) return;
 		
@@ -55,5 +56,15 @@ public class ZombieStaticMove : MonoBehaviour {
 			Destroy(gameObject);
 			//InitializeGhost(_startPos);
 		}
+	}
+	public void Frighten()
+	{
+		state = State.Run;
+		speed = 0.05f;
+		
+		_timeToWhite = Time.time + _gm.scareLength * 0.66f;
+		_timeToToggleWhite = _timeToWhite;
+		//GetComponent<Animator>().SetBool("Run_White", false);
+		
 	}
 }

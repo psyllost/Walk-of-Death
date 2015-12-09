@@ -24,9 +24,5 @@ public class Energizer : MonoBehaviour {
 			Destroy(gameObject);
 		}
     }
-	IEnumerator KeepShooting()
-	{
-		yield return new WaitForSeconds(8);
-		pc.GetComponent<PlayerController> ().setIsShooting(false);
-	}
+
 }

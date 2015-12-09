@@ -145,6 +145,11 @@ public class GameManager : MonoBehaviour {
 		pinky.GetComponent<GhostMove>().Frighten();
 		inky.GetComponent<GhostMove>().Frighten();
 		clyde.GetComponent<GhostMove>().Frighten();
+
+		//zombieStatic.GetComponent<ZombieStaticMove> ().Frighten ();
+		//zombieStatic2.GetComponent<ZombieStaticMove> ().Frighten ();
+		//zombieStatic3.GetComponent<ZombieStaticMove> ().Frighten ();
+		//zombieStatic4.GetComponent<ZombieStaticMove> ().Frighten ();
 		_timeToCalm = Time.time + scareLength;
 
         Debug.Log("Ghosts Scared");
@@ -157,6 +162,11 @@ public class GameManager : MonoBehaviour {
 		pinky.GetComponent<GhostMove>().Calm();
 		inky.GetComponent<GhostMove>().Calm();
 		clyde.GetComponent<GhostMove>().Calm();
+
+		//zombieStatic.GetComponent<ZombieStaticMove> ().Calm ();
+		//zombieStatic2.GetComponent<ZombieStaticMove> ().Calm ();
+		//zombieStatic3.GetComponent<ZombieStaticMove> ().Calm ();
+		//zombieStatic4.GetComponent<ZombieStaticMove> ().Calm ();
 	    PlayerController.killstreak = 0;
     }
 
@@ -169,9 +179,9 @@ public class GameManager : MonoBehaviour {
         blinky = GameObject.Find("blinky");
         pacman = GameObject.Find("pacman");
 		zombieStatic = GameObject.Find ("zombie_static1");
-		zombieStatic = GameObject.Find ("zombie_static2");
-		zombieStatic = GameObject.Find ("zombie_static3");
-		zombieStatic = GameObject.Find ("zombie_static4");
+		zombieStatic2 = GameObject.Find ("zombie_static2");
+		zombieStatic3 = GameObject.Find ("zombie_static3");
+		zombieStatic4 = GameObject.Find ("zombie_static4");
 
         if (clyde == null || pinky == null || inky == null || blinky == null || zombieStatic == null) Debug.Log("One of ghosts are NULL");
         if (pacman == null) Debug.Log("Pacman is NULL");
