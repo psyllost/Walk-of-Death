@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour {
 	private GameObject zombieStatic4;
 	private GameObject bullet;
 	private GameObject pacDot;
+	private GameObject wallOfDeath;
+
     private GameGUINavigation gui;
 	private Time startTime;
 
