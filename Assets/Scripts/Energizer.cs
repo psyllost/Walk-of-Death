@@ -24,7 +24,6 @@ public class Energizer : MonoBehaviour {
 
         if (col.name == "pacman" && gameObject.name == "energizer") {
 			gm.ScareGhosts ();
-			source.PlayOneShot(clip);
 			Destroy (gameObject);
 
 
