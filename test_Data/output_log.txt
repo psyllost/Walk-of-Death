@@ -17,7 +17,7 @@ Loading C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.238 seconds
+- Completed reload, in  0.219 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
@@ -29,14 +29,14 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.170481 ms
+UnloadTime: 4.649881 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1185.
-Total: 0.588024 ms (FindLiveObjects: 0.101781 ms CreateObjectMapping: 0.039771 ms MarkObjects: 0.439200 ms  DeleteObjects: 0.006414 ms)
+Total: 0.477261 ms (FindLiveObjects: 0.062009 ms CreateObjectMapping: 0.027369 ms MarkObjects: 0.381039 ms  DeleteObjects: 0.006414 ms)
 
 True
  
@@ -47,7 +47,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.085951 ms
+UnloadTime: 3.017526 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -58,49 +58,5 @@ Level 0 Loaded!
 
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1190.
-Total: 0.901494 ms (FindLiveObjects: 0.123592 ms CreateObjectMapping: 0.040627 ms MarkObjects: 0.727439 ms  DeleteObjects: 0.008125 ms)
-
-True
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.073694 ms
-Level 0 Loaded!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Level 0 Loaded!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1190.
-Total: 0.856590 ms (FindLiveObjects: 0.078688 ms CreateObjectMapping: 0.042765 ms MarkObjects: 0.726156 ms  DeleteObjects: 0.008553 ms)
-
-True
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.749387 ms
-Level 0 Loaded!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Level 0 Loaded!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1190.
-Total: 0.907054 ms (FindLiveObjects: 0.078688 ms CreateObjectMapping: 0.042765 ms MarkObjects: 0.776191 ms  DeleteObjects: 0.008553 ms)
+Total: 0.906626 ms (FindLiveObjects: 0.087669 ms CreateObjectMapping: 0.041482 ms MarkObjects: 0.767638 ms  DeleteObjects: 0.008980 ms)
 
