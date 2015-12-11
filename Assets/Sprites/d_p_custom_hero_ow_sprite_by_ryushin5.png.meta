@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: ee4c79b631190476fb1a60e9c1346f4e
+timeCreated: 1449832559
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: d_p_custom_hero_ow_sprite_by_ryushin5_0
+    21300002: d_p_custom_hero_ow_sprite_by_ryushin5_1
+    21300004: d_p_custom_hero_ow_sprite_by_ryushin5_2
+    21300006: d_p_custom_hero_ow_sprite_by_ryushin5_3
+    21300008: d_p_custom_hero_ow_sprite_by_ryushin5_4
+    21300010: d_p_custom_hero_ow_sprite_by_ryushin5_5
+    21300012: d_p_custom_hero_ow_sprite_by_ryushin5_6
+    21300014: d_p_custom_hero_ow_sprite_by_ryushin5_7
+    21300016: d_p_custom_hero_ow_sprite_by_ryushin5_8
+    21300018: d_p_custom_hero_ow_sprite_by_ryushin5_9
+    21300020: d_p_custom_hero_ow_sprite_by_ryushin5_10
+    21300022: d_p_custom_hero_ow_sprite_by_ryushin5_11
+    21300024: d_p_custom_hero_ow_sprite_by_ryushin5_12
+    21300026: d_p_custom_hero_ow_sprite_by_ryushin5_13
+    21300028: d_p_custom_hero_ow_sprite_by_ryushin5_14
+    21300030: d_p_custom_hero_ow_sprite_by_ryushin5_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 8
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 196
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 194
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 196
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 194
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 132
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 134
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 132
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 132
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 68
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 68
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 68
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 70
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 4
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: d_p_custom_hero_ow_sprite_by_ryushin5_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 4
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
