@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         _deadPlaying = true;
         GetComponent<Animator>().SetBool("Die", true);
 		Debug.Log (GetComponent<Animator>().GetBool("Die"));
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
 
