@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     public Vector2 _dir = Vector2.zero;
     Vector2 _nextDir = Vector2.zero;
 
+	public AudioClip audioclip;
+	public AudioClip audioclip2;
+
+	public AudioSource source;
+
     [Serializable]
     public class PointSprites
     {
@@ -42,12 +47,17 @@ public class PlayerController : MonoBehaviour
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigation>();
         _dest = transform.position;
+		source = GetComponent<AudioSource>();
+
     }
 
 	void Update() {
 		if (IsShooting==true) {
 			if (Input.GetButtonDown ("Fire1")) {
+					AudioSource.PlayClipAtPoint(audioclip2, gameObject.transform.position);
+
 //			 Instantiate an arrow!
+
 				Rigidbody2D bulletInstance = Instantiate (bullet, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
 				if (_dir == Vector2.up) {
 					bulletInstance.velocity = transform.up * movementSpeed;
@@ -96,6 +106,8 @@ public class PlayerController : MonoBehaviour
         _deadPlaying = true;
         GetComponent<Animator>().SetBool("Die", true);
 		Debug.Log (GetComponent<Animator>().GetBool("Die"));
+		AudioSource.PlayClipAtPoint(audioclip, gameObject.transform.position);
+	
         yield return new WaitForSeconds(2);
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
