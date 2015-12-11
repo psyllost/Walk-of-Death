@@ -17,7 +17,7 @@ Loading C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Walk of Death\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.212 seconds
+- Completed reload, in  0.205 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
@@ -29,14 +29,14 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.141401 ms
+UnloadTime: 5.125433 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1183.
-Total: 0.674410 ms (FindLiveObjects: 0.210405 ms CreateObjectMapping: 0.037205 ms MarkObjects: 0.419100 ms  DeleteObjects: 0.006414 ms)
+Total: 0.812542 ms (FindLiveObjects: 0.091945 ms CreateObjectMapping: 0.046614 ms MarkObjects: 0.664574 ms  DeleteObjects: 0.007270 ms)
 
 True
  
@@ -47,7 +47,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.338412 ms
+UnloadTime: 2.704911 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -58,7 +58,7 @@ Level 0 Loaded!
 
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1188.
-Total: 0.822378 ms (FindLiveObjects: 0.091517 ms CreateObjectMapping: 0.039771 ms MarkObjects: 0.682108 ms  DeleteObjects: 0.008125 ms)
+Total: 0.860867 ms (FindLiveObjects: 0.071418 ms CreateObjectMapping: 0.041054 ms MarkObjects: 0.740269 ms  DeleteObjects: 0.007270 ms)
 
 True
  
@@ -69,7 +69,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.238340 ms
+UnloadTime: 2.845609 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -80,7 +80,7 @@ Level 0 Loaded!
 
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1188.
-Total: 1.839767 ms (FindLiveObjects: 0.152672 ms CreateObjectMapping: 0.102636 ms MarkObjects: 1.563930 ms  DeleteObjects: 0.017961 ms)
+Total: 0.863005 ms (FindLiveObjects: 0.091090 ms CreateObjectMapping: 0.041054 ms MarkObjects: 0.720596 ms  DeleteObjects: 0.008125 ms)
 
 True
  
@@ -91,7 +91,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.672685 ms
+UnloadTime: 5.760499 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -102,7 +102,7 @@ Level 0 Loaded!
 
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1188.
-Total: 1.016105 ms (FindLiveObjects: 0.083820 ms CreateObjectMapping: 0.048324 ms MarkObjects: 0.873697 ms  DeleteObjects: 0.009408 ms)
+Total: 0.922877 ms (FindLiveObjects: 0.103492 ms CreateObjectMapping: 0.044476 ms MarkObjects: 0.762934 ms  DeleteObjects: 0.010263 ms)
 
 True
  
@@ -113,7 +113,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1715)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.485952 ms
+UnloadTime: 5.168626 ms
 Level 0 Loaded!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -124,5 +124,5 @@ Level 0 Loaded!
 
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1188.
-Total: 0.747966 ms (FindLiveObjects: 0.069279 ms CreateObjectMapping: 0.024803 ms MarkObjects: 0.644902 ms  DeleteObjects: 0.008553 ms)
+Total: 2.010401 ms (FindLiveObjects: 0.177904 ms CreateObjectMapping: 0.097505 ms MarkObjects: 1.714464 ms  DeleteObjects: 0.017533 ms)
 
