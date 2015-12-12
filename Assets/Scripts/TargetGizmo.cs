@@ -16,9 +16,9 @@ public class TargetGizmo : MonoBehaviour {
 	{
 		if(ghost.GetComponent<AI>().targetTile != null)
 		{
-			Vector3 pos = new Vector3(ghost.GetComponent<AI>().targetTile.x, 
-										ghost.GetComponent<AI>().targetTile.y, 0f);
-			transform.position = pos;
+			//Vector3 pos = new Vector3(ghost.GetComponent<AI>().targetTile.x, 
+				//						ghost.GetComponent<AI>().targetTile.y, 0f);
+			//transform.position = pos;
 		}
 	}
 }

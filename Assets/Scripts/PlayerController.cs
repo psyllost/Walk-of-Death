@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
 	IEnumerator KeepShooting()
 	{
-		yield return new WaitForSeconds(8);
+		yield return new WaitForSeconds(12);
 		IsShooting = false;
 		
 		//pc.GetComponent<PlayerController> ().setIsShooting(false);

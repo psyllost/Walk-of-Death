@@ -30,7 +30,7 @@ public class Energizer : MonoBehaviour {
 		} else if (col.name == "pacman" && gameObject.name == "weapon") {
 			pc.GetComponent<PlayerController> ().setIsShooting(true);
 
-			AudioSource.PlayClipAtPoint(clip, gameObject.transform.position);
+			//AudioSource.PlayClipAtPoint(clip, gameObject.transform.position);
 			Destroy(gameObject);
 
 

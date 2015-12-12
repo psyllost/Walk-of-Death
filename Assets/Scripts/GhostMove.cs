@@ -295,7 +295,7 @@ public class GhostMove : MonoBehaviour {
 	{
 
 		if (other.name == "pacman") {
-			_gm.LoseLife();
+			//_gm.LoseLife();
 		}else if(other.CompareTag("bullet")){
 			Calm ();
 			InitializeGhost(_startPos);
