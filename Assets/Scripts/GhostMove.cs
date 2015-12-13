@@ -298,7 +298,7 @@ public class GhostMove : MonoBehaviour
 
         if (other.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false)
         {
-           // _gm.LoseLife();
+            _gm.LoseLife();
         }
         else if (other.CompareTag("bullet"))
         {
