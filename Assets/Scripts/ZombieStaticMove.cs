@@ -13,7 +13,9 @@ public class ZombieStaticMove : MonoBehaviour {
 	private float _timeToToggleWhite;
 	public Rigidbody2D bullet;
 
-	void Start()
+    public GameObject pc;
+
+    void Start()
 	{
 		_gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
 		//_toggleInterval = _gm.scareLength * 0.33f * 0.20f;  
@@ -49,7 +51,8 @@ public class ZombieStaticMove : MonoBehaviour {
 		GetComponent<Animator>().SetBool("Run", false);
 	}
 	void OnTriggerEnter2D(Collider2D co) {
-		if (co.name == "pacman"){
+		if (co.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false)
+        {
 			_gm.LoseLife();
 		}
 		else if(co.CompareTag("bullet")){
