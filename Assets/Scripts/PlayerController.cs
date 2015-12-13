@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
         GetComponent<Animator>().SetBool("Die", true);
 		Debug.Log (GetComponent<Animator>().GetBool("Die"));
 		AudioSource.PlayClipAtPoint(audioclip, gameObject.transform.position);
-	
+	    
         yield return new WaitForSeconds(2);
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
@@ -126,6 +126,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.score = temp;
             }
         }
+
         GM.ResetScene();
 		GM.ResetVariables ();
 		Application.LoadLevel("game");
