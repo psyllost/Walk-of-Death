@@ -79,9 +79,8 @@ public class PlayerController : MonoBehaviour
 	{
 		yield return new WaitForSeconds(12);
 		IsShooting = false;
-		
-		//pc.GetComponent<PlayerController> ().setIsShooting(false);
 	}
+
 	// Update is called once per frame
 	void FixedUpdate()
     {
@@ -188,17 +187,17 @@ public class PlayerController : MonoBehaviour
         return _dir;
     }
 
-    public void UpdateScore()
-    {
-        killstreak++;
+    //public void UpdateScore()
+    //{
+        //killstreak++;
 
         // limit killstreak at 4
-        if (killstreak > 4) killstreak = 4;
+        //if (killstreak > 4) killstreak = 4;
 
-        Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
-        GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
+        //Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
+        //GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
 
-    }
+    //}
 
 	public void setIsShooting(bool isShooting) {
 		this.IsShooting = true;
@@ -208,7 +207,6 @@ public class PlayerController : MonoBehaviour
 		this.hasShield = true;
         shield = GetComponent<ParticleSystem>();
         shield.Play();
-        //Light shieldInstance = Instantiate (shield, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Light;
         StartCoroutine (KeepShield());
 	}
 	

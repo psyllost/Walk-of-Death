@@ -24,7 +24,6 @@ public class GhostMove : MonoBehaviour
             _direction = value;
             Vector3 pos = new Vector3((int)transform.position.x, (int)transform.position.y, (int)transform.position.z);
             waypoint = pos + _direction;
-            //Debug.Log ("waypoint (" + waypoint.position.x + ", " + waypoint.position.y + ") set! _direction: " + _direction.x + ", " + _direction.y);
 
         }
     }
@@ -96,9 +95,6 @@ public class GhostMove : MonoBehaviour
             }
         }
     }
-
-    //-----------------------------------------------------------------------------------
-    // Start() functions
 
     public void InitializeGhost()
     {
@@ -187,7 +183,6 @@ public class GhostMove : MonoBehaviour
 
         }
 
-        //-------------------------------------------------
         // read from the hardcoded waypoints
         string line;
 
@@ -289,12 +284,11 @@ public class GhostMove : MonoBehaviour
         Vector3 dir = waypoint - transform.position;
         GetComponent<Animator>().SetFloat("DirX", dir.x);
         GetComponent<Animator>().SetFloat("DirY", dir.y);
-        GetComponent<Animator>().SetBool("Run", false);
+        //GetComponent<Animator>().SetBool("Run", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
 
         if (other.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false)
         {
@@ -308,7 +302,7 @@ public class GhostMove : MonoBehaviour
         }
     }
 
-    //-----------------------------------------------------------------------------------
+
     // State functions
     void Wait()
     {
@@ -381,7 +375,7 @@ public class GhostMove : MonoBehaviour
     void RunAway()
     {
         //speed = 0.3f;
-        GetComponent<Animator>().SetBool("Run", true);
+        //GetComponent<Animator>().SetBool("Run", true);
 
         if (Time.time >= _timeToWhite && Time.time >= _timeToToggleWhite) ToggleBlueWhite();
 

@@ -36,19 +36,18 @@ public class ZombieStaticMove : MonoBehaviour {
 		GetComponent<Animator>().SetFloat("DirX", dir.x);
 		GetComponent<Animator>().SetFloat("DirY", dir.y);
 	}
-	//TODO
+
 	public void Calm()
 	{
 		speed = 0.15f;
 		// if the ghost is not running, do nothing
 		if (state != State.Run) return;
-		
-		//waypoints.Clear ();
+
 		state = State.Chase;
 		_timeToToggleWhite = 0;
 		_timeToWhite = 0;
-		GetComponent<Animator>().SetBool("Run_White", false);
-		GetComponent<Animator>().SetBool("Run", false);
+		//GetComponent<Animator>().SetBool("Run_White", false);
+		//GetComponent<Animator>().SetBool("Run", false);
 	}
 	void OnTriggerEnter2D(Collider2D co) {
 		if (co.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false)
@@ -57,7 +56,6 @@ public class ZombieStaticMove : MonoBehaviour {
 		}
 		else if(co.CompareTag("bullet")){
 			Destroy(gameObject);
-			//InitializeGhost(_startPos);
 		}
 	}
 	public void Frighten()
@@ -67,7 +65,6 @@ public class ZombieStaticMove : MonoBehaviour {
 		
 		_timeToWhite = Time.time + _gm.scareLength * 0.66f;
 		_timeToToggleWhite = _timeToWhite;
-		//GetComponent<Animator>().SetBool("Run_White", false);
 		
 	}
 }

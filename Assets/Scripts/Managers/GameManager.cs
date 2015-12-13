@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour {
     // Game variables
 
     public static int Level = 0;
-    public static int lives = 3;
 
 	public enum GameState { Init, Game, Dead, Scores }
 	public static GameState gameState;
@@ -148,10 +147,6 @@ public class GameManager : MonoBehaviour {
 		inky.GetComponent<GhostMove>().Frighten();
 		clyde.GetComponent<GhostMove>().Frighten();
 
-		//zombieStatic.GetComponent<ZombieStaticMove> ().Frighten ();
-		//zombieStatic2.GetComponent<ZombieStaticMove> ().Frighten ();
-		//zombieStatic3.GetComponent<ZombieStaticMove> ().Frighten ();
-		//zombieStatic4.GetComponent<ZombieStaticMove> ().Frighten ();
 		_timeToCalm = Time.time + scareLength;
 
         Debug.Log("Ghosts Scared");
@@ -165,10 +160,6 @@ public class GameManager : MonoBehaviour {
 		inky.GetComponent<GhostMove>().Calm();
 		clyde.GetComponent<GhostMove>().Calm();
 
-		//zombieStatic.GetComponent<ZombieStaticMove> ().Calm ();
-		//zombieStatic2.GetComponent<ZombieStaticMove> ().Calm ();
-		//zombieStatic3.GetComponent<ZombieStaticMove> ().Calm ();
-		//zombieStatic4.GetComponent<ZombieStaticMove> ().Calm ();
 	    PlayerController.killstreak = 0;
     }
 
@@ -210,7 +201,7 @@ public class GameManager : MonoBehaviour {
 
         score = 0;
         Level = 0;
-        lives = 3;
+        //lives = 3;
         Destroy(GameObject.Find("Game Manager"));
     }
 }
