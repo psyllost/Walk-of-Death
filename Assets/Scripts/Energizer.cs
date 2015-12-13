@@ -7,8 +7,7 @@ public class Energizer : MonoBehaviour {
 	public AudioClip[] audioclip;
 	private AudioSource source;
 	public AudioClip clip;
-	//private GameObject energizer;
-	// Use this for initialization
+
 	void Start ()
 	{
 	    gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -30,7 +29,6 @@ public class Energizer : MonoBehaviour {
 		} else if (col.name == "pacman" && gameObject.name == "weapon") {
 			pc.GetComponent<PlayerController> ().setIsShooting(true);
 
-			//AudioSource.PlayClipAtPoint(clip, gameObject.transform.position);
 			Destroy(gameObject);
 
 		}

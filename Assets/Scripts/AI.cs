@@ -104,8 +104,6 @@ public class AI : MonoBehaviour {
 		if(ghost.direction.y > 0)	nextTile = tiles[manager.Index ((int)currentPos.x, (int)(currentPos.y+1))];
 		if(ghost.direction.y < 0)	nextTile = tiles[manager.Index ((int)currentPos.x, (int)(currentPos.y-1))];
 
-		//Debug.Log (ghost.direction.x + " " + ghost.direction.y);
-		//Debug.Log (ghost.name + ": Next Tile (" + nextTile.x + ", " + nextTile.y + ")" );
 
 		if(nextTile.occupied || currentTile.isIntersection)
 		{
@@ -177,7 +175,6 @@ public class AI : MonoBehaviour {
 			targetPos = new Vector3 (target.position.x+0.499f, target.position.y+0.499f) + 4*dir;
 
 			// if pacmans going up, not 4 ahead but 4 up and 4 left is the target
-			// read about it here: http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
 			// so subtract 4 from X coord from target position
 			if(dir == Vector3.up)	targetPos -= new Vector3(4, 0, 0);
 
