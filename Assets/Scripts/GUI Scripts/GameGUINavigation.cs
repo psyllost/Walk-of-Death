@@ -147,74 +147,9 @@ public class GameGUINavigation : MonoBehaviour {
 	    GameManager.DestroySelf();
 	}
 
-    //IEnumerator AddScore(string name, int score)
-    //{
-    //    string privateKey = "pKey";
-    //    string AddScoreURL = "http://ilbeyli.byethost18.com/addscore.php?";
-    //    string hash = Md5Sum(name + score + privateKey);
-
-    //    Debug.Log("Name: " + name + " Escape: " + WWW.EscapeURL(name));
-
-    //    WWW ScorePost = new WWW(AddScoreURL + "name=" + WWW.EscapeURL(name) + "&score=" + score + "&hash=" + hash );
-    //    yield return ScorePost;
-
-    //    if (ScorePost.error == null)
-    //    {
-    //        Debug.Log("SCORE POSTED!");
-
-    //        // take care of game manager
-    //        Destroy(GameObject.Find("Game Manager"));
-    //        GameManager.score = 0;
-    //        GameManager.Level = 0;
-
-    //        Application.LoadLevel("scores");
-    //        Time.timeScale = 1.0f;
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Error posting results: " + ScorePost.error);
-    //    }
-
-    //    yield return new WaitForSeconds(2);
-    //}
-
-    //public string Md5Sum(string strToEncrypt)
-    //{
-    //    System.Text.UTF8Encoding ue = new System.Text.UTF8Encoding();
-    //    byte[] bytes = ue.GetBytes(strToEncrypt);
-
-    //    // encrypt bytes
-    //    System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
-    //    byte[] hashBytes = md5.ComputeHash(bytes);
-
-    //    // Convert the encrypted bytes back to a string (base 16)
-    //    string hashString = "";
-
-    //    for (int i = 0; i < hashBytes.Length; i++)
-    //    {
-    //        hashString += System.Convert.ToString(hashBytes[i], 16).PadLeft(2, '0');
-    //    }
-
-    //    return hashString.PadLeft(32, '0');
-    //}
-
-	//public void SubmitScores()
-	//{
-	//	// Check username, post to database if its good to go
-	//    int highscore = GameManager.score;
- //       string username = ScoreCanvas.GetComponentInChildren<InputField>().GetComponentsInChildren<Text>()[1].text;
- //       Regex regex = new Regex("^[a-zA-Z0-9]*$");
-
-	//    if (username == "")                 ToggleErrorMsg("Username cannot be empty");
- //       else if (!regex.IsMatch(username))  ToggleErrorMsg("Username can only consist alpha-numberic characters");
- //       else if (username.Length > 10)      ToggleErrorMsg("Username cannot be longer than 10 characters");
- //       else                                StartCoroutine(AddScore(username, highscore));
-	    
-	//}
-
+    
     public void LoadLevel()
     {
-        //GameManager.Level++;
         Application.LoadLevel("game");
     }
 

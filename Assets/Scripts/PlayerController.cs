@@ -35,8 +35,7 @@ public class PlayerController : MonoBehaviour
     // script handles
     private GameGUINavigation GUINav;
     private GameManager GM;
-    private ScoreManager SM;
-
+ 
     private bool _deadPlaying = false;
 
 
@@ -45,7 +44,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         GM = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigation>();
         _dest = transform.position;
 		source = GetComponent<AudioSource>();
@@ -103,6 +101,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PlayDeadAnimation()
     {
+        int highScore;
+        String highScoreKey;
         _deadPlaying = true;
         GetComponent<Animator>().SetBool("Die", true);
 		Debug.Log (GetComponent<Animator>().GetBool("Die"));
@@ -112,16 +112,20 @@ public class PlayerController : MonoBehaviour
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
 
-        //if (GameManager.lives <= 0)
-        //{
-          //  Debug.Log("Treshold for High Score: " + SM.LowestHigh());
-           // if (GameManager.score >= SM.LowestHigh())
-            //    GUINav.getScoresMenu();
-           // else
-        //        GUINav.H_ShowGameOverScreen();
-        //}
+        for (int i = 0; i < 5; i++)
+        {
 
-       // else
+            //Get the highScore from 1 - 5
+            highScoreKey = "brickScore" + (i + 1).ToString();
+            highScore = PlayerPrefs.GetInt(highScoreKey, 0);
+
+            if (GameManager.score > highScore)
+            {
+                int temp = highScore;
+                PlayerPrefs.SetInt(highScoreKey, GameManager.score);
+                GameManager.score = temp;
+            }
+        }
         GM.ResetScene();
 		GM.ResetVariables ();
 		Application.LoadLevel("game");
@@ -187,17 +191,6 @@ public class PlayerController : MonoBehaviour
         return _dir;
     }
 
-    //public void UpdateScore()
-    //{
-        //killstreak++;
-
-        // limit killstreak at 4
-        //if (killstreak > 4) killstreak = 4;
-
-        //Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
-        //GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
-
-    //}
 
 	public void setIsShooting(bool isShooting) {
 		this.IsShooting = true;

@@ -8,6 +8,10 @@ TagManager:
   - pacdot
   - ScoresText
   - bullet
+  - weapon
+  - ScoresText2
+  - ScoresText3
+  - ScoresText4
   layers:
   - Default
   - TransparentFX
