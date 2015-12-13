@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
 	public float clockwise = 1000.0f;
 	public float counterClockwise = -5.0f;
 	private bool IsShooting=false;
-	
+	public bool hasShield = false;
+    ParticleSystem shield;
     public float speed = 0.4f;
     Vector2 _dest = Vector2.zero;
     public Vector2 _dir = Vector2.zero;
@@ -202,4 +203,22 @@ public class PlayerController : MonoBehaviour
 	public void setIsShooting(bool isShooting) {
 		this.IsShooting = true;
 	}
+
+	public void setShield(bool hasShield) {
+		this.hasShield = true;
+        shield = GetComponent<ParticleSystem>();
+        shield.Play();
+        //Light shieldInstance = Instantiate (shield, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Light;
+        StartCoroutine (KeepShield());
+	}
+	
+	IEnumerator KeepShield()
+	{
+		yield return new WaitForSeconds(5);
+        shield.Stop();
+        hasShield = false;
+   
+	}
+
+
 }

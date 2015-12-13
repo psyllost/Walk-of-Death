@@ -4,12 +4,11 @@ using System.IO;
 using UnityEngine;
 
 public class GhostMove : MonoBehaviour {
-
+	public GameObject pc;
     // ----------------------------
     // Navigation variables
 	private Vector3 waypoint;			// AI-determined waypoint
 	private Queue<Vector3> waypoints;	// waypoints used on Init and Scatter states
-
 	// direction is set from the AI component
 	public Vector3 _direction;
 	public Vector3 direction 
@@ -294,8 +293,8 @@ public class GhostMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 
-		if (other.name == "pacman") {
-			//_gm.LoseLife();
+		if (other.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false) {
+			_gm.LoseLife();
 		}else if(other.CompareTag("bullet")){
 			Calm ();
 			InitializeGhost(_startPos);
@@ -442,5 +441,5 @@ public class GhostMove : MonoBehaviour {
         GetComponent<Animator>().SetBool("Run_White", isWhite);
         _timeToToggleWhite = Time.time + _toggleInterval;
     }
-
+	
 }

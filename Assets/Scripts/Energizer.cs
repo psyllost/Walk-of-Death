@@ -33,9 +33,22 @@ public class Energizer : MonoBehaviour {
 			//AudioSource.PlayClipAtPoint(clip, gameObject.transform.position);
 			Destroy(gameObject);
 
-
-
-
+		}
+		if (col.name == "pacman") {
+			switch (gameObject.name) {
+				case "energizer":
+					gm.ScareGhosts ();
+					Destroy (gameObject);
+					break;
+				case "weapon":
+					pc.GetComponent<PlayerController> ().setIsShooting(true);
+					Destroy(gameObject);
+					break;
+				case "shield":
+					pc.GetComponent<PlayerController>().setShield(true);
+					Destroy (gameObject);
+					break;
+			}
 		}
     }
 
