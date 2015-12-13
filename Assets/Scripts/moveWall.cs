@@ -20,7 +20,7 @@ public class moveWall : MonoBehaviour {
 		transform.localScale += new Vector3(0, start2,0);
 		transform.position += new  Vector3 (0, start1,0);
 
-		start2 = start2+0.00002F;
+		start2 = start2+0.00003F;
 		start1 = start2 / 2.0F;
 	}
 

@@ -293,7 +293,11 @@ public class GhostMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 
+<<<<<<< HEAD
 		if (other.name == "pacman" && pc.GetComponent<PlayerController>().hasShield == false) {
+=======
+		if (other.name == "pacman") {
+>>>>>>> a723ab0627cd420da15c0abb71f9158cb64e985d
 			_gm.LoseLife();
 		}else if(other.CompareTag("bullet")){
 			Calm ();
