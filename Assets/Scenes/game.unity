@@ -2353,10 +2353,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   high: 0
   score: 0
-  lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &203937839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4468,7 +4464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639eefc5c0711a442a6dd627f8069587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghost: {fileID: 1686575255}
 --- !u!4 &369912273 stripped
 Transform:
   m_PrefabParentObject: {fileID: 481096, guid: e6375b70d9e816446a9af3cedc9415e7, type: 2}
@@ -5600,7 +5595,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508745660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.2, y: 106.7, z: 0}
+  m_LocalPosition: {x: 7.6, y: 8.4, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children:
   - {fileID: 1335397381}
@@ -7940,10 +7935,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 667275fa5a9c1c24f88c11ba93588e66, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &604424689 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 151032, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 2}
-  m_PrefabInternal: {fileID: 2091307303}
 --- !u!4 &604424690 stripped
 Transform:
   m_PrefabParentObject: {fileID: 451032, guid: e51e4ed36b94fe24f8dc937c5aac9052, type: 2}
@@ -9084,7 +9075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639eefc5c0711a442a6dd627f8069587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghost: {fileID: 2080102582}
 --- !u!4 &660113941
 Transform:
   m_ObjectHideFlags: 0
@@ -15007,7 +14997,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639eefc5c0711a442a6dd627f8069587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghost: {fileID: 604424689}
 --- !u!4 &1624525503 stripped
 Transform:
   m_PrefabParentObject: {fileID: 481096, guid: e6375b70d9e816446a9af3cedc9415e7, type: 2}
@@ -16315,7 +16304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639eefc5c0711a442a6dd627f8069587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghost: {fileID: 1937124096}
 --- !u!1 &1972106544
 GameObject:
   m_ObjectHideFlags: 0
